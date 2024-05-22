@@ -48,12 +48,12 @@ with col2:
             }
 
             .glow-on-hover {
-                transition: transform 0.3s, filter 0.3s;
+                transition: transform 0.5s, filter 0.3s;
             }
 
             .glow-on-hover:hover {
                 transform: scale(1.15);
-                filter: drop-shadow(0 0 90px rgba(197, 45, 243, 0.8));
+                filter: drop-shadow(0 0 10px rgba(197, 45, 243, 0.8));
             }
         </style>
         <p class="animated-gradient-text" align="center">
