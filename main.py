@@ -90,7 +90,12 @@ with col3:
         </a>
     """, unsafe_allow_html=True)
 
-col1, col2 = st.columns([1, 1])
+
+st.markdown("")
+st.markdown("")
+st.markdown("")
+
+col1, col2, col3 = st.columns([1, 1,1])
 
 with col1:
     st.markdown("""
@@ -105,6 +110,9 @@ with col2:
             <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZEExouj3D9lCghjCrKQClfRJByTmfCE2IDpjLm9v2j_Xl3ZQFMjilR99dNpSfvYnpmnxOLQc2i_WattvfwJyhxCQlnsDRPwA=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
+
+with col2:
+    st.write("")
 
 
 
