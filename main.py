@@ -90,6 +90,22 @@ with col3:
         </a>
     """, unsafe_allow_html=True)
 
+col1, col2 = st.columns([1, 1])
+
+with col1:
+    st.markdown("""
+        <a href="https://genaipocs.streamlit.app/">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaq7mmRt5Vm2p1nY6KCdPuuxuEmvXHSVvR4F-UWtUBbW0gN4HyZyPFTlIGkZd2p_yhAca7-m0Z6V75tcb_1eCjM2Ht6qwKWkoo=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+        </a>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+        <a href="https://genaipocs.streamlit.app/">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZEExouj3D9lCghjCrKQClfRJByTmfCE2IDpjLm9v2j_Xl3ZQFMjilR99dNpSfvYnpmnxOLQc2i_WattvfwJyhxCQlnsDRPwA=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+        </a>
+    """, unsafe_allow_html=True)
+
 
 
 st.markdown('''<style>
