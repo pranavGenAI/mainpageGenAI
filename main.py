@@ -71,7 +71,7 @@ col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
     st.markdown("""
-        <img src="/bidbooster.png" width="400" class="glow-on-hover">
+        <img src="https://raw.githubusercontent.com/pranavGenAI/mainpageGenAI/bidbooster.png" width="400" class="glow-on-hover">
     """, unsafe_allow_html=True)
 
 with col2:
