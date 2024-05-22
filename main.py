@@ -99,7 +99,7 @@ col1, col2, col3 = st.columns([1, 1,1])
 
 with col1:
     st.markdown("""
-        <a href="https://genaipocs.streamlit.app/">
+        <a href="https://reportwhiz.streamlit.app/">
             <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaq7mmRt5Vm2p1nY6KCdPuuxuEmvXHSVvR4F-UWtUBbW0gN4HyZyPFTlIGkZd2p_yhAca7-m0Z6V75tcb_1eCjM2Ht6qwKWkoo=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
