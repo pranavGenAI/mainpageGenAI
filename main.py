@@ -12,7 +12,7 @@ html(
    <style>
       #particles {
          width: 100%;
-         height: 100vh;
+         height: 150vh;
          background-color: black;
       }
    </style>
