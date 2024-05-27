@@ -96,7 +96,7 @@ particle_html = """
                 events: {
                     onhover: {
                         enable: true,
-                        mode: "grab"
+                        mode: "repulse"
                     },
                     onclick: {
                         enable: true,
