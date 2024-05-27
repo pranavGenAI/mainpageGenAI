@@ -30,14 +30,14 @@ particle_html = """
         tsParticles.load("tsparticles", {
             particles: {
                 number: {
-                    value: 80,
+                    value: 50,
                     density: {
                         enable: true,
                         value_area: 800
                     }
                 },
                 color: {
-                    value: "#ffffff"
+                    value: "#f29fff"
                 },
                 shape: {
                     type: "circle",
