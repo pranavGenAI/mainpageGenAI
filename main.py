@@ -24,10 +24,10 @@ html(
       tsParticles.load("particles", {
          particles: {
             number: {
-               value: 80
+               value: 90
             },
             size: {
-               value: 2.5  // Adjust the particle size here (default is 3)
+               value: 3  // Adjust the particle size here (default is 3)
             },
             move: {
                enable: true,
