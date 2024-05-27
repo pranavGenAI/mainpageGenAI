@@ -39,7 +39,7 @@ st.markdown("""
         });
     </script>
 </body>
-""")
+""", unsafe_allow_html=True)
 
 
 col1, col2, col3 = st.columns([1, 50, 1])
