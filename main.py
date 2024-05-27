@@ -3,10 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
 st.markdown("""
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Particle Canvas</title>
+
         <style>
             html, body {
                 height: 100%;
@@ -21,7 +18,6 @@ st.markdown("""
                 height: 100%;
             }
         </style>
-    </head>
     
     <body>
         <div id="particle-canvas"></div>
