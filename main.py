@@ -196,9 +196,8 @@ st.markdown(
           }
        });
     </script>
-    ''', 
-    unsafe_allow_html=True
-)
+    ''', unsafe_allow_html=True)
+
 st.markdown('''<style>
    
     @keyframes my_animation {
