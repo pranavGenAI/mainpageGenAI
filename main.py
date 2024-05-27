@@ -4,6 +4,7 @@ from streamlit.components.v1 import html
 
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
+
 html(
     """
 <html>
@@ -12,8 +13,8 @@ html(
    <style>
       #particles {
          width: 100%;
-         height: 150vh;
-         background-color: black;
+         height: 100vh;
+         background-color: #08000e;
       }
    </style>
 </head>
@@ -25,12 +26,15 @@ html(
             number: {
                value: 50
             },
+            size: {
+               value: 2  // Adjust the particle size here (default is 3)
+            },
             move: {
                enable: true,
                speed: 2
             },
             color: {
-               value: "#ffffff"
+               value: "#f29fff"
             },
             links: {
                enable: true,
@@ -91,6 +95,7 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+
 
 
 col1, col2, col3 = st.columns([1, 50, 1])
