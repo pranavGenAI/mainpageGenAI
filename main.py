@@ -268,11 +268,7 @@ with col3:
 
 st.markdown("""
 <style>
-    @keyframes my_animation {
-        0% {background-position: 0% 0%;}
-        50% {background-position: 100% 100%;}
-        100% {background-position: 0% 0%;}
-    }
+    
     [data-testid=stSidebar] {
         background: linear-gradient(360deg, #1a2631 95%, #161d29 10%);
     }
