@@ -4,73 +4,6 @@ from streamlit.components.v1 import html
 
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
-st.markdown(
-    """
-<html>
-<head>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
-   <style>
-      #particles {
-         width: 100%;
-         height: 100vh;
-         background-color: black;
-      }
-   </style>
-</head>
-<body>
-   <div id="particles"></div>
-   <script>
-      tsParticles.load("particles", {
-         particles: {
-            number: {
-               value: 50
-            },
-            move: {
-               enable: true,
-               speed: 2
-            },
-            color: {
-               value: "#ffffff"
-            },
-            links: {
-               enable: true,
-               distance: 150,
-               color: "#ffffff",
-               opacity: 0.4,
-               width: 1
-            },
-            interactivity: {
-               detectsOn: "canvas",
-               events: {
-                  onHover: {
-                     enable: true,
-                     mode: "grab"
-                  },
-                  onClick: {
-                     enable: true,
-                     mode: "push"
-                  }
-               },
-               modes: {
-                  grab: {
-                     distance: 200,
-                     links: {
-                        opacity: 1
-                     }
-                  },
-                  push: {
-                     quantity: 4
-                  }
-               }
-            }
-         }
-      });
-   </script>
-</body>
-</html>
-""",  unsafe_allow_html=True
-)
-
 
 
 col1, col2, col3 = st.columns([1, 50, 1])
@@ -195,6 +128,71 @@ with col2:
  #        background-attachment: fixed;
  #    } 
 #This code below 
+st.markdown(
+    '''
+    <html>
+    <head>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
+       <style>
+          #particles {
+             width: 100%;
+             height: 100vh;
+             background-color: black;
+          }
+       </style>
+    </head>
+    <body>
+       <div id="particles"></div>
+       <script>
+          tsParticles.load("particles", {
+             particles: {
+                number: {
+                   value: 50
+                },
+                move: {
+                   enable: true,
+                   speed: 2
+                },
+                color: {
+                   value: "#ffffff"
+                },
+                links: {
+                   enable: true,
+                   distance: 150,
+                   color: "#ffffff",
+                   opacity: 0.4,
+                   width: 1
+                },
+                interactivity: {
+                   detectsOn: "canvas",
+                   events: {
+                      onHover: {
+                         enable: true,
+                         mode: "grab"
+                      },
+                      onClick: {
+                         enable: true,
+                         mode: "push"
+                      }
+                   },
+                   modes: {
+                      grab: {
+                         distance: 200,
+                         links: {
+                            opacity: 1
+                         }
+                      },
+                      push: {
+                         quantity: 4
+                      }
+                   }
+                }
+             }
+          });
+       </script>
+    </body>
+    </html>
+    ''',unsafe_allow_html=True)
 
 st.markdown('''<style>
    
