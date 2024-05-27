@@ -78,7 +78,7 @@ particle_html = """
                 },
                 move: {
                     enable: true,
-                    speed: 2,
+                    speed: 3,
                     direction: "none",
                     random: false,
                     straight: false,
@@ -106,7 +106,7 @@ particle_html = """
                 },
                 modes: {
                     grab: {
-                        distance: 200,
+                        distance: 400,
                         line_linked: {
                             opacity: 1
                         }
