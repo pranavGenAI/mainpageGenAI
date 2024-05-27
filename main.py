@@ -157,15 +157,7 @@ with col2:
 
 
 st.markdown('''<style>
-    .stApp > header {
-        background-color: transparent;
-    }
-    .stApp {
-        background: linear-gradient(45deg, #092035 20%, #0E1117 45%, #0E1117 55%, #3a5683 90%);
-        animation: my_animation 20s ease infinite;
-        background-size: 200% 200%;
-        background-attachment: fixed;
-    }
+
     @keyframes my_animation {
         0% {background-position: 0% 0%;}
         50% {background-position: 100% 100%;}
