@@ -4,7 +4,7 @@ from streamlit.components.v1 import html
 
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
-html(
+st.markdown(
     """
 <html>
 <head>
@@ -68,9 +68,7 @@ html(
    </script>
 </body>
 </html>
-""",
-    height=800,
-    width=800,
+""",  unsafe_allow_html=True
 )
 
 
