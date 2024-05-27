@@ -1,12 +1,9 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
-
-html(
-    """
+html_code = """
 <html>
 <head>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
@@ -23,19 +20,10 @@ html(
    <script>
       tsParticles.load("particles", {
          particles: {
-            number: {
-               value: 80
-            },
-            size: {
-               value: 2.5  // Adjust the particle size here (default is 3)
-            },
-            move: {
-               enable: true,
-               speed: 2
-            },
-            color: {
-               value: "#f29fff"
-            },
+            number: { value: 80 },
+            size: { value: 2.5 },  // Adjust the particle size here
+            move: { enable: true, speed: 2 },
+            color: { value: "#f29fff" },
             links: {
                enable: true,
                distance: 150,
@@ -46,25 +34,15 @@ html(
             interactivity: {
                detectsOn: "canvas",
                events: {
-                  onHover: {
-                     enable: true,
-                     mode: "grab"
-                  },
-                  onClick: {
-                     enable: true,
-                     mode: "push"
-                  }
+                  onHover: { enable: true, mode: "grab" },
+                  onClick: { enable: true, mode: "push" }
                },
                modes: {
                   grab: {
                      distance: 200,
-                     links: {
-                        opacity: 1
-                     }
+                     links: { opacity: 1 }
                   },
-                  push: {
-                     quantity: 4
-                  }
+                  push: { quantity: 4 }
                }
             }
          }
@@ -72,14 +50,12 @@ html(
    </script>
 </body>
 </html>
-""",
-    height=800,
-    width=800,
-)
+"""
+
+st.components.v1.html(html_code, height=800, width=800)
 
 # Add CSS to make the iframe fullscreen
-st.markdown(
-    """
+st.markdown("""
 <style>
     iframe {
         position: fixed;
@@ -92,11 +68,7 @@ st.markdown(
         width: 100%;
     }
 </style>
-""",
-    unsafe_allow_html=True,
-)
-
-
+""", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 50, 1])
 
@@ -105,7 +77,6 @@ with col1:
 
 with col2:
     st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=150)
-    st.markdown("")
     st.markdown("")
 
     st.markdown("""
@@ -186,12 +157,11 @@ with col3:
         </a>
     """, unsafe_allow_html=True)
 
-
 st.markdown("")
 st.markdown("")
 st.markdown("")
 
-col1, col2, col3 = st.columns([1, 1,1])
+col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
     st.markdown("""
@@ -207,22 +177,11 @@ with col2:
         </a>
     """, unsafe_allow_html=True)
 
-with col2:
+with col3:
     st.write("")
 
- # .stApp > header {
- #        background-color: transparent;
- #    }
- #    .stApp {
- #        background: linear-gradient(45deg, #092035 20%, #0E1117 45%, #0E1117 55%, #3a5683 90%);
- #        animation: my_animation 20s ease infinite;
- #        background-size: 200% 200%;
- #        background-attachment: fixed;
- #    } 
-#This code below 
-
-st.markdown('''<style>
-   
+st.markdown("""
+<style>
     @keyframes my_animation {
         0% {background-position: 0% 0%;}
         50% {background-position: 100% 100%;}
@@ -244,5 +203,5 @@ st.markdown('''<style>
         position: relative;
         top: 3px;
     }    
-    
-</style>''', unsafe_allow_html=True)
+</style>
+""", unsafe_allow_html=True)
