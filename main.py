@@ -78,7 +78,7 @@ particle_html = """
                 },
                 move: {
                     enable: true,
-                    speed: 1.5,
+                    speed: 1,
                     direction: "none",
                     random: false,
                     straight: false,
