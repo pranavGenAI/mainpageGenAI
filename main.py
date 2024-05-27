@@ -24,7 +24,7 @@ html(
       tsParticles.load("particles", {
          particles: {
             number: {
-               value: 70
+               value: 80
             },
             size: {
                value: 2.5  // Adjust the particle size here (default is 3)
