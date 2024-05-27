@@ -3,42 +3,35 @@ import streamlit as st
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
 st.markdown("""
-<style>
-    html, body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    #particle-canvas {
-        width: 100%;
-        height: 100%;
-    }
-</style>
-
-<body>
-    <div id="particle-canvas"></div>
-    <!-- Ensure this path is correct and the file contains the ParticleNetwork definition -->
-    <script src="particle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Check if ParticleNetwork is defined
-            if (typeof ParticleNetwork !== 'undefined') {
-                var canvasDiv = document.getElementById('particle-canvas');
-                var options = {
-                    particleColor: '#888',
-                    interactive: true,
-                    speed: 'medium',
-                    density: 'high'
-                };
-                var particleCanvas = new ParticleNetwork(canvasDiv, options);
-            } else {
-                console.error('ParticleNetwork is not defined. Please check the script source.');
-            }
-        });
-    </script>
-</body>
+<html>
+	<head>
+		<style type="text/css">
+			body {
+				margin:0;
+				padding:0;
+			}
+			#particle-canvas {
+				width:100%;
+				height:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="particle-canvas"></div>
+		<script type="text/javascript" src="particle-network.min.js"></script>
+		<script type="text/javascript">
+			var canvasDiv = document.getElementById('particle-canvas');
+			var options = {
+				particleColor: '#888',
+				background: 'img/demo-bg.jpg',
+				interactive: true,
+				speed: 'medium',
+				density: 'high'
+			};
+			var particleCanvas = new ParticleNetwork(canvasDiv, options);
+		</script>
+	</body>
+</html>
 """, unsafe_allow_html=True)
 
 
@@ -154,10 +147,19 @@ with col2:
 with col2:
     st.write("")
 
-
+ # .stApp > header {
+ #        background-color: transparent;
+ #    }
+ #    .stApp {
+ #        background: linear-gradient(45deg, #092035 20%, #0E1117 45%, #0E1117 55%, #3a5683 90%);
+ #        animation: my_animation 20s ease infinite;
+ #        background-size: 200% 200%;
+ #        background-attachment: fixed;
+ #    } 
+#This code below 
 
 st.markdown('''<style>
-
+   
     @keyframes my_animation {
         0% {background-position: 0% 0%;}
         50% {background-position: 100% 100%;}
@@ -179,4 +181,5 @@ st.markdown('''<style>
         position: relative;
         top: 3px;
     }    
+    
 </style>''', unsafe_allow_html=True)
