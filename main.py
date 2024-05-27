@@ -130,70 +130,75 @@ with col2:
 #This code below 
 st.markdown(
     '''
-    <html>
-    <head>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
-       <style>
-          #particles {
-             width: 100%;
-             height: 100vh;
-             background-color: black;
-          }
-       </style>
-    </head>
-    <body>
-       <div id="particles"></div>
-       <script>
-          tsParticles.load("particles", {
-             particles: {
-                number: {
-                   value: 50
+    <style>
+       body {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          margin: 0;
+          background-color: black;
+       }
+       #particles {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+       }
+    </style>
+    <div id="particles"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/particles@1.28.0/dist/tsparticles.min.js"></script>
+    <script>
+       tsParticles.load("particles", {
+          particles: {
+             number: {
+                value: 50
+             },
+             move: {
+                enable: true,
+                speed: 2
+             },
+             color: {
+                value: "#ffffff"
+             },
+             links: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1
+             },
+             interactivity: {
+                detectsOn: "canvas",
+                events: {
+                   onHover: {
+                      enable: true,
+                      mode: "grab"
+                   },
+                   onClick: {
+                      enable: true,
+                      mode: "push"
+                   }
                 },
-                move: {
-                   enable: true,
-                   speed: 2
-                },
-                color: {
-                   value: "#ffffff"
-                },
-                links: {
-                   enable: true,
-                   distance: 150,
-                   color: "#ffffff",
-                   opacity: 0.4,
-                   width: 1
-                },
-                interactivity: {
-                   detectsOn: "canvas",
-                   events: {
-                      onHover: {
-                         enable: true,
-                         mode: "grab"
-                      },
-                      onClick: {
-                         enable: true,
-                         mode: "push"
+                modes: {
+                   grab: {
+                      distance: 200,
+                      links: {
+                         opacity: 1
                       }
                    },
-                   modes: {
-                      grab: {
-                         distance: 200,
-                         links: {
-                            opacity: 1
-                         }
-                      },
-                      push: {
-                         quantity: 4
-                      }
+                   push: {
+                      quantity: 4
                    }
                 }
              }
-          });
-       </script>
-    </body>
-    </html>
-    ''',unsafe_allow_html=True)
-
+          }
+       });
+    </script>
+    ''', 
+    unsafe_allow_html=True
+)
 st.markdown('''<style>
    
     @keyframes my_animation {
