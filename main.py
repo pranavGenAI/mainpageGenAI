@@ -1,38 +1,78 @@
 import streamlit as st
+from streamlit.components.v1 import html
+
 
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
-st.markdown("""
+html(
+    """
 <html>
-	<head>
-		<style type="text/css">
-			body {
-				margin:0;
-				padding:0;
-			}
-			#particle-canvas {
-				width:100%;
-				height:100%;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="particle-canvas"></div>
-		<script type="text/javascript" src="particle-network.min.js"></script>
-		<script type="text/javascript">
-			var canvasDiv = document.getElementById('particle-canvas');
-			var options = {
-				particleColor: '#888',
-				background: 'img/demo-bg.jpg',
-				interactive: true,
-				speed: 'medium',
-				density: 'high'
-			};
-			var particleCanvas = new ParticleNetwork(canvasDiv, options);
-		</script>
-	</body>
+<head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
+   <style>
+      #particles {
+         width: 100%;
+         height: 100vh;
+         background-color: black;
+      }
+   </style>
+</head>
+<body>
+   <div id="particles"></div>
+   <script>
+      tsParticles.load("particles", {
+         particles: {
+            number: {
+               value: 50
+            },
+            move: {
+               enable: true,
+               speed: 2
+            },
+            color: {
+               value: "#ffffff"
+            },
+            links: {
+               enable: true,
+               distance: 150,
+               color: "#ffffff",
+               opacity: 0.4,
+               width: 1
+            },
+            interactivity: {
+               detectsOn: "canvas",
+               events: {
+                  onHover: {
+                     enable: true,
+                     mode: "grab"
+                  },
+                  onClick: {
+                     enable: true,
+                     mode: "push"
+                  }
+               },
+               modes: {
+                  grab: {
+                     distance: 200,
+                     links: {
+                        opacity: 1
+                     }
+                  },
+                  push: {
+                     quantity: 4
+                  }
+               }
+            }
+         }
+      });
+   </script>
+</body>
 </html>
-""", unsafe_allow_html=True)
+""",
+    height=800,
+    width=800,
+)
+
 
 
 col1, col2, col3 = st.columns([1, 50, 1])
