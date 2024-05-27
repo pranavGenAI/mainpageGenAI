@@ -3,56 +3,142 @@ from streamlit.components.v1 import html
 
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 
-html_code = """
-<html>
+particle_html = """
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
-   <style>
-      #particles {
-         width: 100%;
-         height: 100vh;
-         background-color: #08000e;
-      }
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #tsparticles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+    </style>
 </head>
 <body>
-   <div id="particles"></div>
-   <script>
-      tsParticles.load("particles", {
-         particles: {
-            number: { value: 80 },
-            size: { value: 2.5 },  // Adjust the particle size here
-            move: { enable: true, speed: 2 },
-            color: { value: "#f29fff" },
-            links: {
-               enable: true,
-               distance: 150,
-               color: "#ffffff",
-               opacity: 0.4,
-               width: 1
+    <div id="tsparticles"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.1.0/tsparticles.bundle.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: "#ffffff"
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
             },
             interactivity: {
-               detectsOn: "canvas",
-               events: {
-                  onHover: { enable: true, mode: "grab" },
-                  onClick: { enable: true, mode: "push" }
-               },
-               modes: {
-                  grab: {
-                     distance: 200,
-                     links: { opacity: 1 }
-                  },
-                  push: { quantity: 4 }
-               }
-            }
-         }
-      });
-   </script>
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 200,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
 </body>
 </html>
 """
 
-st.components.v1.html(html_code, height=800, width=800)
+# Embed the HTML code into the Streamlit app
+st.components.v1.html(particle_html, height=1000)
 
 # Add CSS to make the iframe fullscreen
 st.markdown("""
