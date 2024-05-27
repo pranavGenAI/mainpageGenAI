@@ -128,75 +128,84 @@ with col2:
  #        background-attachment: fixed;
  #    } 
 #This code below 
-st.markdown(
-    '''
-    <style>
-       body {
-          position: relative;
-          width: 100%;
-          height: 100vh;
-          margin: 0;
-          background-color: black;
-       }
-       #particles {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-       }
-    </style>
-    <div id="particles"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/particles@1.28.0/dist/tsparticles.min.js"></script>
-    <script>
-       tsParticles.load("particles", {
-          particles: {
-             number: {
+import streamlit as st
+
+# Define the CSS and JavaScript code for particle animation
+css = '''
+<style>
+    body {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+    }
+    #particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+</style>
+'''
+
+js = '''
+<div id="particles"></div>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/particles@1.28.0/dist/tsparticles.min.js"></script>
+<script>
+    tsParticles.load("particles", {
+        particles: {
+            number: {
                 value: 50
-             },
-             move: {
+            },
+            move: {
                 enable: true,
                 speed: 2
-             },
-             color: {
+            },
+            color: {
                 value: "#ffffff"
-             },
-             links: {
+            },
+            links: {
                 enable: true,
                 distance: 150,
                 color: "#ffffff",
                 opacity: 0.4,
                 width: 1
-             },
-             interactivity: {
+            },
+            interactivity: {
                 detectsOn: "canvas",
                 events: {
-                   onHover: {
-                      enable: true,
-                      mode: "grab"
-                   },
-                   onClick: {
-                      enable: true,
-                      mode: "push"
-                   }
+                    onHover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    onClick: {
+                        enable: true,
+                        mode: "push"
+                    }
                 },
                 modes: {
-                   grab: {
-                      distance: 200,
-                      links: {
-                         opacity: 1
-                      }
-                   },
-                   push: {
-                      quantity: 4
-                   }
+                    grab: {
+                        distance: 200,
+                        links: {
+                            opacity: 1
+                        }
+                    },
+                    push: {
+                        quantity: 4
+                    }
                 }
-             }
-          }
-       });
-    </script>
-    ''', unsafe_allow_html=True)
+            }
+        }
+    });
+</script>
+'''
+
+# Inject the CSS and JavaScript into Streamlit
+st.markdown(css + js, unsafe_allow_html=True)
+
 
 st.markdown('''<style>
    
