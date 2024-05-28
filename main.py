@@ -30,7 +30,7 @@ particle_html = """
         tsParticles.load("tsparticles", {
             particles: {
                 number: {
-                    value: 90,
+                    value: 120,
                     density: {
                         enable: true,
                         value_area: 800
