@@ -2,8 +2,8 @@ import streamlit as st
 from streamlit.components.v1 import html
 
 st.set_page_config(page_title="GenAI Demos", layout='wide')
-st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=120)
-st.markdown("")
+# st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=120)
+# st.markdown("")
 
 particle_html = """
 <!DOCTYPE html>
@@ -228,21 +228,21 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.markdown("""
         <a href="https://reportwhiz.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaq7mmRt5Vm2p1nY6KCdPuuxuEmvXHSVvR4F-UWtUBbW0gN4HyZyPFTlIGkZd2p_yhAca7-m0Z6V75tcb_1eCjM2Ht6qwKWkoo=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYCuWWuGaFU_djXTE1bUekPLtX_m5OpA4MXd6Of8u94qT-7U4ayfhZPw9kB2yA8unHMO_g2eN2BCk9YgO7tFyvBjrOlppGzAk4=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
     
 with col2:
     st.markdown("""
         <a href="https://chatwithbidbooster.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaiLwB5hnQjwXzS8fm14y2v4-Hq2ZooZG2zqdWCmAk-sF2_h0N_aDpRWHLRkwtVkk0cL_Sq7pAiAhutX2pQQBqtyxmiqVVskQ=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbUDvfeEk4gukuswUZSSd-Y0RzLUJpb-Ga_OlYNqtub42Wi42DltBRQO-VhgpTuiaERfntcgcSj8DnkmavdJtEPXnnwNFv8bJY=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
-        <a href="https://chatwithbidbooster.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaiLwB5hnQjwXzS8fm14y2v4-Hq2ZooZG2zqdWCmAk-sF2_h0N_aDpRWHLRkwtVkk0cL_Sq7pAiAhutX2pQQBqtyxmiqVVskQ=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+        <a href="https://bideval.streamlit.app/">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ4uPT5T0F7m-yf0BvYbb0qnVBdGfWn9bf_JvrIYQen-tVKcBXuM709cmYGjQbh9E1orFnOa6P_UsOjOYBf-TwFyvxbWFk3Rso=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
