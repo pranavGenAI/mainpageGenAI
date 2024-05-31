@@ -2,6 +2,8 @@ import streamlit as st
 from streamlit.components.v1 import html
 
 st.set_page_config(page_title="GenAI Demos", layout='wide')
+st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=120)
+st.markdown("")
 
 particle_html = """
 <!DOCTYPE html>
@@ -222,26 +224,28 @@ st.markdown("")
 
 col1, col2, col3 = st.columns([1, 1, 1])
 
+
 with col1:
+    st.markdown("""
+        <a href="https://reportwhiz.streamlit.app/">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaq7mmRt5Vm2p1nY6KCdPuuxuEmvXHSVvR4F-UWtUBbW0gN4HyZyPFTlIGkZd2p_yhAca7-m0Z6V75tcb_1eCjM2Ht6qwKWkoo=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+        </a>
+    """, unsafe_allow_html=True)
+    
+with col2:
     st.markdown("""
         <a href="https://chatwithbidbooster.streamlit.app/">
             <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaiLwB5hnQjwXzS8fm14y2v4-Hq2ZooZG2zqdWCmAk-sF2_h0N_aDpRWHLRkwtVkk0cL_Sq7pAiAhutX2pQQBqtyxmiqVVskQ=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
-with col2:
+with col3:
     st.markdown("""
-        <a href="https://bidboosterjpn.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZu2SSBe5wM3ocA0WfBtlAjR-lwQ2Tn2CZAJaUQnAVjKfT6YeGzcN4cKSwGCwJQ4ImfFHrEOix8t2ul4LecjUh3fD1YURJB3S4=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+        <a href="https://chatwithbidbooster.streamlit.app/">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaiLwB5hnQjwXzS8fm14y2v4-Hq2ZooZG2zqdWCmAk-sF2_h0N_aDpRWHLRkwtVkk0cL_Sq7pAiAhutX2pQQBqtyxmiqVVskQ=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
-with col3:
-    st.markdown("""
-        <a href="https://datavizanalyst.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYdnKU3WUMDKWU7-tUvo2Kka73CmAC5f8UGXxHeiPRkJZMtdAp21HDzg998B9nX65OAw2waL5c6qrQ0Vq82Zn4j_OgdzKyH3co=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
-        </a>
-    """, unsafe_allow_html=True)
 
 st.markdown("")
 st.markdown("")
@@ -251,20 +255,25 @@ col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
     st.markdown("""
-        <a href="https://reportwhiz.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaq7mmRt5Vm2p1nY6KCdPuuxuEmvXHSVvR4F-UWtUBbW0gN4HyZyPFTlIGkZd2p_yhAca7-m0Z6V75tcb_1eCjM2Ht6qwKWkoo=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+        <a href="https://bidboosterjpn.streamlit.app/">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZu2SSBe5wM3ocA0WfBtlAjR-lwQ2Tn2CZAJaUQnAVjKfT6YeGzcN4cKSwGCwJQ4ImfFHrEOix8t2ul4LecjUh3fD1YURJB3S4=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
 with col2:
+    st.markdown("""
+        <a href="https://datavizanalyst.streamlit.app/">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYdnKU3WUMDKWU7-tUvo2Kka73CmAC5f8UGXxHeiPRkJZMtdAp21HDzg998B9nX65OAw2waL5c6qrQ0Vq82Zn4j_OgdzKyH3co=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+        </a>
+    """, unsafe_allow_html=True)
+
+with col3:
     st.markdown("""
         <a href="https://genaipocs.streamlit.app/">
             <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZEExouj3D9lCghjCrKQClfRJByTmfCE2IDpjLm9v2j_Xl3ZQFMjilR99dNpSfvYnpmnxOLQc2i_WattvfwJyhxCQlnsDRPwA=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
-with col3:
-    st.write("")
 
 st.markdown("""
 <style>
