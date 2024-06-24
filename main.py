@@ -158,6 +158,29 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+
+
+# Add CSS to make the iframe fullscreen and hide the viewer badge
+st.markdown("""
+<style>
+    iframe {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .viewerBadge_container__r5tak {
+        display: none;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+
 col1, col2, col3 = st.columns([1, 50, 1])
 
 with col1:
