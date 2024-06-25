@@ -4,7 +4,19 @@ from streamlit.components.v1 import html
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 # st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=120)
 # st.markdown("")
-
+st.markdown(
+    """
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var badgeElement = document.querySelector('.viewerBadge_link__qRIco');
+        if (badgeElement) {
+            badgeElement.style.display = 'none';
+        }
+    });
+    </script>
+    """,
+    unsafe_allow_html=True  # Allow the HTML tags to be rendered
+)
 particle_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -179,21 +191,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
-st.markdown(
-    """
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var badgeElement = document.querySelector('.viewerBadge_link__qRIco');
-        if (badgeElement) {
-            badgeElement.style.display = 'none';
-        }
-    });
-    </script>
-    """,
-    unsafe_allow_html=True  # Allow the HTML tags to be rendered
-)
-
 
 col1, col2, col3 = st.columns([1, 50, 1])
 
