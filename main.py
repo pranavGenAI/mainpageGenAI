@@ -182,14 +182,18 @@ st.markdown("""
 
 st.markdown(
     """
-    <style>
-    .viewerBadge_link__qRIco {
-        display: none !important;  /* Hide the div */
-    }
-    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var badgeElement = document.querySelector('.viewerBadge_link__qRIco');
+        if (badgeElement) {
+            badgeElement.style.display = 'none';
+        }
+    });
+    </script>
     """,
     unsafe_allow_html=True  # Allow the HTML tags to be rendered
 )
+
 
 col1, col2, col3 = st.columns([1, 50, 1])
 
