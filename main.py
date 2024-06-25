@@ -4,19 +4,7 @@ from streamlit.components.v1 import html
 st.set_page_config(page_title="GenAI Demos", layout='wide')
 # st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=120)
 # st.markdown("")
-st.markdown(
-    """
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var badgeElement = document.querySelector('.viewerBadge_link__qRIco');
-        if (badgeElement) {
-            badgeElement.style.display = 'none';
-        }
-    });
-    </script>
-    """,
-    unsafe_allow_html=True  # Allow the HTML tags to be rendered
-)
+
 particle_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -198,7 +186,7 @@ with col1:
     st.write(' ')
 
 with col2:
-    st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=150)
+   # st.image("https://www.vgen.it/wp-content/uploads/2021/04/logo-accenture-ludo.png", width=150)
     st.markdown("")
 
     st.markdown("""
@@ -246,7 +234,7 @@ with col2:
             }
         </style>
         <p class="animated-gradient-text" align="center">
-            GN H&PS Generative AI PoCs
+            Generative AI PoCs
         </p>
     """, unsafe_allow_html=True)
 
