@@ -250,21 +250,21 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.markdown("""
         <a href="https://reportwhiz.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYCuWWuGaFU_djXTE1bUekPLtX_m5OpA4MXd6Of8u94qT-7U4ayfhZPw9kB2yA8unHMO_g2eN2BCk9YgO7tFyvBjrOlppGzAk4=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihakwU0QQKIRsYIUOfaWXhgIPCKgtva0ihv2gNc7RJX8e8KAxMVW64PrQL6-YEgGGSxEBM5i0AgTXL4WC3k23RjxbCP_DpEglEc=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
     
 with col2:
     st.markdown("""
         <a href="https://chatwithbidbooster.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbUDvfeEk4gukuswUZSSd-Y0RzLUJpb-Ga_OlYNqtub42Wi42DltBRQO-VhgpTuiaERfntcgcSj8DnkmavdJtEPXnnwNFv8bJY=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYCKYxWsMHAfFNOO2yQUwj0RNdW1GtyEeC27KvGnfj_4dz8HwrZmNHZF3H7rwU0LuraGeTsusDVO1M7Y56H8NsNd7Wx_LJl_J4=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
         <a href="https://bideval.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ4uPT5T0F7m-yf0BvYbb0qnVBdGfWn9bf_JvrIYQen-tVKcBXuM709cmYGjQbh9E1orFnOa6P_UsOjOYBf-TwFyvxbWFk3Rso=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbC26x5Q5TXlK2NgBTM2kP16I8ZJqzIfEEwdcHrPOBKsYOelp5B-n6IiJNEghKzvdqhOC1Fer0dvmTz5EauMcZvigpcFEgp23U=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
