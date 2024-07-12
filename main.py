@@ -290,7 +290,7 @@ with col1:
 
 with col2:
     st.markdown("""
-        <a href="https://genaipocs.streamlit.app/">
+        <a href="https://datavizanalyst.streamlit.app/">
             <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYZfeW8yZpWNJliUVyN7Lw6_F22p_oMZ_utU5IbTohmwWwbzQ-lW4WNECr1Y_Uykbg0A-L_l05mWJDDFFWlH6bWv2LTiRdgWcc=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
