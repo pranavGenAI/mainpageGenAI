@@ -276,17 +276,17 @@ st.markdown("")
 col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
-    # st.markdown("""
-    #     <a href="https://bidboosterjpn.streamlit.app/">
-    #         <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZrm5XhgDpLFe0L6ASo_IQxWN8d9TtoSrCje8uX0AWI_xU7WmKTv6ju-k1kuQ9Tkd_QMsu42DayfKJYdevLFgRs4jOuAhxN6GA=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
-    #     </a>
-    # """, unsafe_allow_html=True)
-    
     st.markdown("""
-        <a href="https://genaipocs.streamlit.app/">
+        <a href="https://bidboosterjpn.streamlit.app/">
             <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZrm5XhgDpLFe0L6ASo_IQxWN8d9TtoSrCje8uX0AWI_xU7WmKTv6ju-k1kuQ9Tkd_QMsu42DayfKJYdevLFgRs4jOuAhxN6GA=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
+    
+    # st.markdown("""
+    #     <a href="https://genaipocs.streamlit.app/">
+    #         <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZrm5XhgDpLFe0L6ASo_IQxWN8d9TtoSrCje8uX0AWI_xU7WmKTv6ju-k1kuQ9Tkd_QMsu42DayfKJYdevLFgRs4jOuAhxN6GA=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+    #     </a>
+    # """, unsafe_allow_html=True)
 
 with col2:
     st.markdown("""
