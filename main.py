@@ -273,7 +273,7 @@ st.markdown("")
 st.markdown("")
 st.markdown("")
 
-col1, col2, col3 = st.columns([1, 1, 1])
+col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
 
 with col1:
     st.markdown("""
@@ -301,7 +301,15 @@ with col3:
             <img src="https://drive.google.com/drive-viewer/AKGpihaVmOLEdLofmUbrnYpIZ4n4dA-ukb6cj0Wk2BD6DePYv6tJ4pw8G6VkzhNa7vz5OZiMNAu8zm96QAel6VGq2Z3dfmP1uC3QSQ=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
+with col4:
+    
+    file_id = "1DM-CvvmpRt2STnB6nTNkULPqBphIXpDG"
 
+    # URL
+    url = f"https://drive.google.com/uc?export=view&id={file_id}"
+    
+    response = requests.get(url)
+    st.image(response.content)
 
 st.markdown("""
 <style>
