@@ -250,21 +250,21 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.markdown("""
         <a href="https://reportwhiz.streamlit.app/">
-            <img src="https://drive.google.com/drive-viewer/AKGpihbu0jkxpsOUS4BQUu2be2t_wBJoDLWvCeXkEWQm8BFMgQQWjpzQgUIYbw3s0e0oTBhYrcn2p0HJYdF1OhQFmL5G_sqgE05pn6U=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://i.ibb.co/HxsqLnS/bidcreation-1.png" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
     
 with col2:
     st.markdown("""
         <a href="https://chatwithbidbooster.streamlit.app/">
-            <img src="https://drive.google.com/drive-viewer/AKGpihb2JqRm100B4cPhxHaSBY6ZQOGDd0x4zRRmnmVUm_PV5m-BPD52nktjnbQYd66ib8WnC72OiKjzCuJFVs2qmZKX0p1wVZ7UXV8=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://i.ibb.co/3rWtRz0/bidquery.png" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
         <a href="https://bideval.streamlit.app/">
-            <img src="https://drive.google.com/drive-viewer/AKGpiha17v3yJ8hi8dY7B-jH_RpQfpVGt11v9v2raodK9DKdWF8uHn44wc4zHzQwH1OE5s9RGaWMvj9NfuNyrHWq5UE4ak57_UAATNg=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://i.ibb.co/tmrPXtL/bideval.png" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
@@ -291,14 +291,14 @@ with col1:
 with col2:
     st.markdown("""
         <a href="https://datavizanalyst.streamlit.app/">
-            <img src="https://drive.google.com/drive-viewer/AKGpihbwKvRfKu6NkFBgO-zNYLQCEvcl7-dB8WWaYPq9hrHhZROtttBUUa3sOHr215vAfez0BClc7hb8CemVHIyXBNc5jjdOsx9GT8g=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://i.ibb.co/wBd64n4/dataviz.png" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
         <a href="https://genaipocs.streamlit.app/">
-            <img src="https://drive.google.com/drive-viewer/AKGpihaVmOLEdLofmUbrnYpIZ4n4dA-ukb6cj0Wk2BD6DePYv6tJ4pw8G6VkzhNa7vz5OZiMNAu8zm96QAel6VGq2Z3dfmP1uC3QSQ=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://i.ibb.co/hKm7mNy/chatbot.png" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
