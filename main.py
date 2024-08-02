@@ -250,21 +250,21 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.markdown("""
         <a href="https://reportwhiz.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihakwU0QQKIRsYIUOfaWXhgIPCKgtva0ihv2gNc7RJX8e8KAxMVW64PrQL6-YEgGGSxEBM5i0AgTXL4WC3k23RjxbCP_DpEglEc=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://drive.google.com/drive-viewer/AKGpihbu0jkxpsOUS4BQUu2be2t_wBJoDLWvCeXkEWQm8BFMgQQWjpzQgUIYbw3s0e0oTBhYrcn2p0HJYdF1OhQFmL5G_sqgE05pn6U=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
     
 with col2:
     st.markdown("""
         <a href="https://chatwithbidbooster.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYCKYxWsMHAfFNOO2yQUwj0RNdW1GtyEeC27KvGnfj_4dz8HwrZmNHZF3H7rwU0LuraGeTsusDVO1M7Y56H8NsNd7Wx_LJl_J4=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://drive.google.com/drive-viewer/AKGpihb2JqRm100B4cPhxHaSBY6ZQOGDd0x4zRRmnmVUm_PV5m-BPD52nktjnbQYd66ib8WnC72OiKjzCuJFVs2qmZKX0p1wVZ7UXV8=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
         <a href="https://bideval.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbC26x5Q5TXlK2NgBTM2kP16I8ZJqzIfEEwdcHrPOBKsYOelp5B-n6IiJNEghKzvdqhOC1Fer0dvmTz5EauMcZvigpcFEgp23U=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://drive.google.com/drive-viewer/AKGpiha17v3yJ8hi8dY7B-jH_RpQfpVGt11v9v2raodK9DKdWF8uHn44wc4zHzQwH1OE5s9RGaWMvj9NfuNyrHWq5UE4ak57_UAATNg=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
@@ -278,7 +278,7 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.markdown("""
         <a href="https://bidboosterjpn.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZrm5XhgDpLFe0L6ASo_IQxWN8d9TtoSrCje8uX0AWI_xU7WmKTv6ju-k1kuQ9Tkd_QMsu42DayfKJYdevLFgRs4jOuAhxN6GA=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://drive.google.com/drive-viewer/AKGpihYJrZXODTBRBTREcQ9QdHQI5BlFjD7thSXfX6mUVe-uED53jBKWJiVXwR6xnx3Or-zEBL2QbtlpLrIAOf4NCOXE1P_9zhAxQu0=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
     
@@ -291,14 +291,14 @@ with col1:
 with col2:
     st.markdown("""
         <a href="https://datavizanalyst.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYZfeW8yZpWNJliUVyN7Lw6_F22p_oMZ_utU5IbTohmwWwbzQ-lW4WNECr1Y_Uykbg0A-L_l05mWJDDFFWlH6bWv2LTiRdgWcc=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://drive.google.com/drive-viewer/AKGpihbwKvRfKu6NkFBgO-zNYLQCEvcl7-dB8WWaYPq9hrHhZROtttBUUa3sOHr215vAfez0BClc7hb8CemVHIyXBNc5jjdOsx9GT8g=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
         <a href="https://genaipocs.streamlit.app/">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbyQEH2Xl4uLLFT781DuEVcvik1YPFmOhE5yEpbWlwO5oXEfm1ZraUIbzSDDDqB2QceWdxRF64U8JFvjyfLcf9ClhdIcssqEw=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://drive.google.com/drive-viewer/AKGpihaVmOLEdLofmUbrnYpIZ4n4dA-ukb6cj0Wk2BD6DePYv6tJ4pw8G6VkzhNa7vz5OZiMNAu8zm96QAel6VGq2Z3dfmP1uC3QSQ=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
 
