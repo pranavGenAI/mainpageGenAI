@@ -278,7 +278,7 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.markdown("""
         <a href="https://bidboosterjpn.streamlit.app/">
-            <img src="https://drive.google.com/drive-viewer/AKGpihYJrZXODTBRBTREcQ9QdHQI5BlFjD7thSXfX6mUVe-uED53jBKWJiVXwR6xnx3Or-zEBL2QbtlpLrIAOf4NCOXE1P_9zhAxQu0=s1600-rw-v1" class="glow-on-hover" height=350 width=450>
+            <img src="https://ibb.co/pdgTkqr" class="glow-on-hover" height=350 width=450>
         </a>
     """, unsafe_allow_html=True)
     
