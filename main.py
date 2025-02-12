@@ -205,7 +205,14 @@ with col2:
                 text-align: center;
                 color: white; /* Fallback color */
             }
-    
+            .glow-on-hover {
+                transition: transform 0.5s, filter 0.3s;
+            }
+
+            .glow-on-hover:hover {
+                transform: scale(1.15);
+                filter: drop-shadow(0 0 10px rgba(197, 45, 243, 0.8));
+            }
             .animated-gradient-text::before {
                 content: attr(data-text);
                 position: absolute;
