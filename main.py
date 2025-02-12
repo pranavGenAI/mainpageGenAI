@@ -201,17 +201,15 @@ with col2:
                 font-size: 40px !important;
                 font-family: Arial, sans-serif !important;
                 font-weight: bold !important;
-                position: relative;
-                display: inline-block;
                 text-align: center;
+                display: block;
+                margin: 20px auto;
                 color: white; /* Fallback color */
             }
     
             .animated-gradient-text::before {
                 content: attr(data-text);
                 position: absolute;
-                top: 0;
-                left: 0;
                 width: 100%;
                 height: 100%;
                 background: linear-gradient(45deg, rgb(245, 58, 126) 30%, rgb(200, 1, 200) 55%, rgb(197, 45, 243) 20%);
@@ -226,6 +224,7 @@ with col2:
             Generative AI PoCs
         </p>
     """, unsafe_allow_html=True)
+
 
 
 
