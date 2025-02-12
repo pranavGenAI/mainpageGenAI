@@ -198,7 +198,7 @@ with col2:
             }
     
             .animated-gradient-text {
-                font-size: 24px !important;
+                font-size: 40px !important;
                 font-family: Arial, sans-serif !important;
                 font-weight: bold !important;
                 position: relative;
