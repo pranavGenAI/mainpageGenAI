@@ -196,50 +196,37 @@ with col2:
                 50% { background-position: 100% 50%; }
                 100% { background-position: 0% 50%; }
             }
-
+    
             .animated-gradient-text {
-                font-size: 24px;
-                font-family: Arial, sans-serif;
-                font-weight: bold;
+                font-size: 24px !important;
+                font-family: Arial, sans-serif !important;
+                font-weight: bold !important;
+                position: relative;
                 display: inline-block;
-                line-height: normal;
+                text-align: center;
+                color: white; /* Fallback color */
+            }
+    
+            .animated-gradient-text::before {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
                 background: linear-gradient(45deg, rgb(245, 58, 126) 30%, rgb(200, 1, 200) 55%, rgb(197, 45, 243) 20%);
                 background-size: 300% 200%;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 animation: gradientAnimation 6s ease-in-out infinite;
-                color: #FFF;
-                transition: color 0.5s, text-shadow 0.5s;
-            }
-
-            @keyframes glow {
-                0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
-                    color: #0e3742;
-                    text-shadow: none;
-                }
-                18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
-                    color: #fff;
-                    text-shadow: 0 0 10px rgb(197, 45, 243), 0 0 20px rgb(197, 45, 243);
-                }
-            }
-
-            .animated-gradient-text:hover {
-                animation: glow 5s linear infinite;
-            }
-
-            .glow-on-hover {
-                transition: transform 0.5s, filter 0.3s;
-            }
-
-            .glow-on-hover:hover {
-                transform: scale(1.15);
-                filter: drop-shadow(0 0 10px rgba(197, 45, 243, 0.8));
             }
         </style>
-        <p class="animated-gradient-text" align="center">
+    
+        <p class="animated-gradient-text" data-text="Generative AI PoCs">
             Generative AI PoCs
         </p>
     """, unsafe_allow_html=True)
+
 
 
 with col3:
