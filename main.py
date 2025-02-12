@@ -197,15 +197,15 @@ with col2:
                 100% { background-position: 0% 50%; }
             }
     
-            .animated-gradient-text {
-                font-size: 40px !important;
-                font-family: Arial, sans-serif !important;
-                font-weight: bold !important;
-                text-align: center;
-                display: block;
-                margin: 20px auto;
-                color: white; /* Fallback color */
-            }
+            # .animated-gradient-text {
+            #     font-size: 40px !important;
+            #     font-family: Arial, sans-serif !important;
+            #     font-weight: bold !important;
+            #     text-align: center;
+            #     display: block;
+            #     margin: 20px auto;
+            #     color: white; /* Fallback color */
+            # }
     
             .animated-gradient-text::before {
                 content: attr(data-text);
