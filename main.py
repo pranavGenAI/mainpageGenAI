@@ -198,8 +198,8 @@ with col2:
             }
 
             .animated-gradient-text {
-                
-                font-size: 42px;
+                font-size: 24px;
+                font-family: Arial, sans-serif;
                 background: linear-gradient(45deg, rgb(245, 58, 126) 30%, rgb(200, 1, 200) 55%, rgb(197, 45, 243) 20%);
                 background-size: 300% 200%;
                 -webkit-background-clip: text;
@@ -237,6 +237,7 @@ with col2:
             Generative AI PoCs
         </p>
     """, unsafe_allow_html=True)
+
 
 with col3:
     st.write(' ')
